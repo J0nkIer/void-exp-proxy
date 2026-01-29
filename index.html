@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V0ID-EXP</title>
+
+  <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/thumbnails/023/816/429/small/black-hole-loop-animation-on-black-background-isolated-transparent-alpha-png.png">
+
+
+  <!-- Orbitron Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Starfield -->
+  <canvas id="stars"></canvas>
+
+  <!-- Top Switch -->
+  <div class="top-nav">
+    <button class="tab active" data-tab="search">SEARCH</button>
+    <button class="tab" data-tab="games">GAMES</button>
+    <button class="tab" data-tab="sites">SITES</button>
+    <div class="tab" data-tab="more">MORE TO COME...</div>
+    
+  </div>
+
+  <!-- Main -->
+  <main>
+    <!-- Search -->
+    <section id="search" class="view active">
+      <h1 class="logo">V0ID-EXP</h1>
+  
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Explore the void…"
+      />
+      <button id="searchBtn">ENTER</button>
+    </section>
+  
+    <!-- Games -->
+<section id="games" class="view view-fill">
+    <div class="games-scroll">
+      <div class="game-grid">
+        <div class="game-card" onclick="openGame('games/idle-dice/index.html')">
+          IDLE DICE
+        </div>
+        <div class="game-card" onclick="openGame('games/minecraft/index.html')">
+            MINECRAFT
+        </div>
+          <div class="game-card" onclick="openGame('games/retrobowl/index.html')">
+            RETROBOWL
+        </div>
+        <div class="game-card" onclick="openGame ('games/gunspin/index.html')">
+            GUNSPIN
+          </div>
+           <div class="game-card" onclick="openGame('games/rocketleague/index.html')">
+            2D ROCKET LEAGUE
+          </div>
+           <div class="game-card" onclick="openGame('games/bitlife/index.html')">
+            BITLIFE
+          </div>
+           <div class="game-card" onclick="openGame('games/10mintilldawn/index.html')">
+            10 MINUTES TILL DAWN
+          </div>
+           <div class="game-card" onclick="openGame('games/fallout1/index.html')">
+            FALLOUT 1
+          </div>
+           <div class="game-card" onclick="openGame('games/schoolboyrunaway/index.html')">
+            SCHOOLBOY RUNAWAY
+          </div>
+           <div class="game-card" onclick="openGame ('games/pvz/index.html')">
+            PVZ
+          </div>
+           <div class="game-card" onclick="openGame ('games/crazykitty3d/index.html')">
+            CRAZY KITTY 3D
+          </div>
+           <div class="game-card" onclick="openGame ('games/fnaf1/index.html')">
+            FNAF 1
+          </div>
+           <div class="game-card" onclick="openGame ('games/fnaf2/index.html')">
+            FNAF 2
+            </div>
+          <div class="game-card" onclick="openGame ('games/fnaf3/index.html')">
+            FNAF 3
+            </div>
+            <div class="game-card" onclick="openGame ('games/btd4/index.html')">
+            BTD4
+            </div>
+            <div class="game-card" onclick="openGame ('games/idleminer/index.html')">
+            IDLE MINER
+            </div>
+            <div class="game-card" onclick="openGame ('games/timeshooter/index.html')">
+            TIME SHOOTER
+            </div>
+            <div class="game-card" onclick="openGame ('games/rooftopsnipers2/index.html')">
+            ROOFTOP SNIPERS 2
+            </div>
+            <div class="game-card" onclick="openGame ('games/learntofly/index.html')">
+            LEARN TO FLY
+            </div>
+            <div class="game-card" onclick="openGame ('games/ducklife/index.html')">
+            DUCK LIFE
+            </div>
+            <div class="game-card" onclick="openGame ('games/ducklife2/index.html')">
+            DUCK LIFE 2
+            </div>
+            <div class="game-card" onclick="openGame ('games/ducklife3/index.html')">
+            DUCK LIFE 3
+            </div>
+            <div class="game-card" onclick="openGame ('games/run/index.html')">
+            RUN
+            </div>
+            <div class="game-card" onclick="openGame ('games/run2/index.html')">
+            RUN 2
+            </div>
+            <div class="game-card" onclick="openGame ('games/idlebreakout/index.html')">
+            IDLE BREAKOUT
+            </div>
+      </div>
+    </section>
+
+     <!-- Sites -->
+     <section id="sites" class="view">
+        <div class="site-grid">
+          <div class="site-card" onclick="openSite('sites/youtube/index.html')">
+            YOUTUBE
+          </div>
+        </div>
+      </section>
+  
+    <!-- ⭐ MORE TO COME -->
+    <section id="more" class="view">
+      <div class="more-container">
+        <h2 class="more-title">More Coming Soon</h2>
+  
+        <p class="more-text">
+          New games are will be worked on and added to V0ID-EXP.
+        </p>
+  
+        <div class="more-divider"></div>
+  
+        <p class="more-text">
+          <strong>Proxy Status:</strong><br>
+          Experimental • Work In Progress
+        </p>
+  
+        <p class="more-text muted">
+          Sites are currently not loading.
+        </p>
+  
+        <div class="more-divider"></div>
+  
+        <p class="more-credit">
+          Proxy system, and website by <span>Jonkler</span>
+        </p>
+      </div>
+    </section>
+  </main>  
+
+  <script src="app.js"></script>
+</body>
+</html>
